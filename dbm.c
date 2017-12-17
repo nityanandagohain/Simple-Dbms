@@ -1,5 +1,13 @@
+/*
+Nityananda Gohain
+School of Engineering, Tezpur University
+2016-2020
+*/
+
 #include <stdio.h>
+//stdlib.h for dynamic memory allocation using malloc
 #include <stdlib.h>
+//structure.h contains all the structure in the program
 #include "structures.h"
 
 
