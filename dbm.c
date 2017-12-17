@@ -1,32 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-struct address
-{
-	int rollno;
-	int val;
-};
+#include "structures.h"
 
 
-struct node
-{
-	struct address index;
-	struct node* next;	
-}; 
-
-
-struct student
-{
-	char fname[20];
-	char lname[20];
-	int age;
-	float height;
-	long bank_bal;
-	char eyecolor[20];
-	int no_of_cars;
-	int no_of_cycle;
-	char gf[20];
-};
 
 void display();
 void load_linked_list(struct node **head,struct node **current);
