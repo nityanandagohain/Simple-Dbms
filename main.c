@@ -17,25 +17,34 @@ int main(){
 	listNode *head=NULL,*current=NULL;
 	loadLinkedList(&head,&current);
 	int choice;
-	
-	printf("Welcome to program\n");
-	printf("press 1 to enter data\npress 2 to display all data \n press 3 to search data of specific rollno \npress 4 to display rollno");
-	scanf("%d",&choice);
-	switch(choice){
-		case 1:
-			input(&head, &current);
-			break;
-		case 2:
-			display();
-			break;
-		case 3:
-			specific(&head);
-			break;
-		case 4:
-			display_rollno(&head);
-			break;
+	printf("WELCOME\n");
+	while(1){
+		printf("PRESS\n");
+		printf("  1  :Enter\n");
+		printf("  2  :DISPLAY ALL ENTRIES\n");
+		printf("  3  :SEARCH DATA FOR A ROLLNO\n");
+		printf("  4  :DISPLAY ALL ROLLNO's\n");
+		printf("  5  :EXIT\n\n");
+		printf("CHOICE : ");
+
+		scanf("%d",&choice);
+		switch(choice){
+			case 1:
+				input(&head, &current);
+				break;
+			case 2:
+				display();
+				break;
+			case 3:
+				specific(&head);
+				break;
+			case 4:
+				display_rollno(&head);
+				break;
+			case 5:
+				exit(-1);
+		}
 	}
-	printf("Done\n");
 	return 0;
 }
 

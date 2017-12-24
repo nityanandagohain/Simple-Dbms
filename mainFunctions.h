@@ -47,7 +47,7 @@ void input(listNode **head,listNode **current){
 
 
 void display(){
-	FILE *f1=fopen("index.txt","r"),*f2=fopen("csb16022.txt","r");
+	FILE *f1=fopen("index.idx","r"),*f2=fopen("csb16022.txt","r");
 	data s1;
 	addressDataStruct ad1;
 	if(f1!=NULL && f2!=NULL){
@@ -59,9 +59,9 @@ void display(){
 			printf("ROLL NO : %d\n", ad1.rollno);
 			printf("FIRST NAME : %s\n", s1.firstName);
 			printf("LAST NAME : %s\n", s1.lastName);
-			printf("EMAIL : %s", s1.email);
-			printf("MARRIED (Y/N) : %c", s1.married);
-			printf("HEIGHT : %f", s1.height);
+			printf("EMAIL : %s\n", s1.email);
+			printf("MARRIED (Y/N) : %c\n", s1.married);
+			printf("HEIGHT : %f\n", s1.height);
 
 			fread(&ad1, sizeof(ad1), 1, f1);
 		}
@@ -85,9 +85,9 @@ void specific(listNode **head){
 			printf("ROLL NO : %d\n", rno);
 			printf("FIRST NAME : %s\n", s1.firstName);
 			printf("LAST NAME : %s\n", s1.lastName);
-			printf("EMAIL : %s", s1.email);
-			printf("MARRIED (Y/N) : %c", s1.married);
-			printf("HEIGHT : %f", s1.height);
+			printf("EMAIL : %s\n", s1.email);
+			printf("MARRIED (Y/N) : %c\n", s1.married);
+			printf("HEIGHT : %f\n", s1.height);
 
 			fclose(f);
 			return;
