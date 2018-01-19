@@ -1,6 +1,6 @@
 ## SIMPLE-DBMS
 This program can be used to store data of students.
-Here the roll no's are used as primary key
+Here the roll no's are used as primary key.
 
 Here I have used Linked List data structure to store the starting address
 of each structure.
